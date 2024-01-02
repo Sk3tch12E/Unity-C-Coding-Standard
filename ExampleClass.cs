@@ -22,7 +22,7 @@ namespace ExampleNameSpace
         private int _packagePrivate;
         private int _myPrivate;
         private static int _myStaticPrivate;
-        public const var PRIVATE_VAR;
+        private const var PRIVATE_VAR;
         
         protected int _myProtected;
         #endregion
