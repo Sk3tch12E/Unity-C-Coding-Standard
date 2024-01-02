@@ -29,15 +29,15 @@ namespace ExampleNameSpace
 
         #region /// Methods ///
         // EXAMPLE: Methods start with a verb.
-        public void SetInitialPosition(float x, float y, float z)
+        public void SetInitialPosition(float _x, float _y, float _z)
         {
-            transform.position = new Vector3(x, y, z);
+            transform.position = new Vector3(_x, _y, _z);
         }
 
         // EXAMPLE: Methods ask a question when they return bool.
-        public bool IsNewPosition(Vector3 currentPosition)
+        public bool IsNewPosition(Vector3 _currentPosition)
         {
-            return (transform.position == currentPosition );
+            return (transform.position == _currentPosition );
         }
         #endregion
 
@@ -58,9 +58,9 @@ namespace ExampleNameSpace
             DoorOpened?.Invoke();
         }
 
-        public void OnPointsScored(int points)
+        public void OnPointsScored(int _points)
         {
-            PointsScored?.Invoke(points);
+            PointsScored?.Invoke(_points);
         }
 
         // define an EventArgs if needed
@@ -70,10 +70,10 @@ namespace ExampleNameSpace
             public int ObjectID { get; }
             public Color Color { get; }
 
-            public CustomEventArgs(int objectId, Color color)
+            public CustomEventArgs(int _objectId, Color _color)
             {
-                this.ObjectID = objectId;
-                this.Color = color;
+                this.ObjectID = _objectId;
+                this.Color = _color;
             }
         }
     #endregion
@@ -90,6 +90,6 @@ public interface IKillable
 
 public interface IDamageable<T>
 {
-    void Damage(T damageTaken);
+    void Damage(T _damageTaken);
 }
 #endregion
