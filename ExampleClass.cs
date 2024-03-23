@@ -37,7 +37,7 @@ namespace ExampleNameSpace
         // EXAMPLE: Methods ask a question when they return bool.
         public bool IsNewPosition(Vector3 _currentPosition)
         {
-            return (transform.position == _currentPosition );
+            return transform.position == _currentPosition;
         }
         #endregion
 
