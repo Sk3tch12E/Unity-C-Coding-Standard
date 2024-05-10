@@ -24,7 +24,7 @@ namespace ExampleNameSpace
         private static int _myStaticPrivate;
         private const var PRIVATE_VAR;
         
-        protected int _myProtected;
+        protected int _MyProtected;
         #endregion
 
         #region /// Methods ///
